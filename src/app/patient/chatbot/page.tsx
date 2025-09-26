@@ -35,7 +35,6 @@ export default function ChatbotPage() {
     setIsLoading(true);
 
     try {
-      // Only send the latest message to the backend
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -46,7 +45,6 @@ export default function ChatbotPage() {
 
       const data = await response.json();
 
-      // Append the assistant's reply
       const assistantMessage: Message = { role: 'assistant', content: data.reply };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
