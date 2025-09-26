@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from 'react';
@@ -24,7 +25,7 @@ export default function DoctorLayout({ children }) {
   return (
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
-      <aside className="w-64 bg-white border-r border-gray-200 shadow-sm p-6 flex flex-col">
+      <aside className="w-64 bg-white border-r border-gray-200 shadow-sm p-6 flex flex-col fixed">
         <div className="flex items-center space-x-3 mb-8">
           <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
             <Heart className="w-6 h-6 text-white" />

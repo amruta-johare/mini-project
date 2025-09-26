@@ -1,6 +1,6 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
-
+import SidebarPatient from '@/components/patient/SidebarPatient';
 interface Message {
   role: 'user' | 'assistant';
   content: string;

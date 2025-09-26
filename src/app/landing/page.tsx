@@ -17,22 +17,6 @@ import TestimonialsSection from '@/components/landing/TestimonialsSection';
 import CTASection from '@/components/landing/CTASection';
 import TeamSection from '@/components/landing/TeamSection';
 
-/**
- * MediMitra Landing Page
- * 
- * Refactored from single monolithic file into clean, reusable components.
- * Maintains exact same visual design and functionality as original.
- * 
- * Component Structure:
- * - Header: Navigation with mobile menu and scroll effects
- * - HeroSection: Main headline with animated mockup
- * - FeaturesSection: 3-card grid showcasing key features
- * - HowItWorksSection: 4-step process explanation
- * - TestimonialsSection: User testimonials grid
- * - CTASection: Final call-to-action banner
- * - TeamSection: Team member cards with social links
- * - Footer: Multi-column footer with links
- */
 export default function LandingPage() {
   return (
     <div className="app-container">
